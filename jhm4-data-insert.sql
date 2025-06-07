@@ -85,3 +85,4 @@ INSERT INTO Class_Teacher (class_id, teacher_id) VALUES
     (3, 4),
     (4, 5),
     (5, 6);
+    
