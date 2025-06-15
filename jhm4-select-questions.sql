@@ -76,6 +76,9 @@ ORDER BY t.name;
 
 -- 13. 子查詢：查詢選修課程數量最多的學生姓名
 -- 你的答案：
+SELECT s.name,
+(SELECT COUNT(course_id), MAX()FROM Student_Course sc WHERE sc.student_id = s.student_id) 
+AS 选修课程数 FROM Student s LIMIT 100;
 
 
 -- 14. 複雜統計查詢：統計每個班級的學生人數和平均年齡（以2024年為基準）
